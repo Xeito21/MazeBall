@@ -21,11 +21,13 @@ public class TriggerButton : MonoBehaviour
     {
         if (!isOpened && itemCollector.GetKeyCount() >= requiredKeys)
         {
+            FindObjectOfType<AudioManager>().PlaySound("WallSliding");
             isOpened = true;
             wall.transform.DOMoveX(wall.transform.position.x + 4.5f, 1f).SetEase(Ease.OutBounce);
         }
         else
         {
+            FindObjectOfType<AudioManager>().PlaySound("WallSliding");
             StartCoroutine(ShowWarningText());
         }
     }

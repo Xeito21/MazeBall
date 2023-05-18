@@ -17,6 +17,7 @@ public class ItemCollector : MonoBehaviour
             Destroy(other.gameObject);
             coins++;
             coinText.text = "" + coins;
+            FindObjectOfType<AudioManager>().PlaySound("CoinsPick");
         }
 
 
@@ -25,6 +26,7 @@ public class ItemCollector : MonoBehaviour
             Destroy (other.gameObject);
             keys++;
             keyText.text = "Key :" + keys;
+            FindObjectOfType<AudioManager>().PlaySound("CoinsPick");
         }
     }
 
