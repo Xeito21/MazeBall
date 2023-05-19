@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5975435066298592039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5975435066298592038}
+  - component: {fileID: 5975435066298592037}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5975435066298592038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975435066298592039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 856.60846, y: 423.55838, z: -7.5522738}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5975435066298592037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5975435066298592039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d10f6f20383d0a4ea194b300cc0b82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: MainTheme
+    clip: {fileID: 8300000, guid: 3bc60a95878dd1845811149b9b0f8115, type: 3}
+    volume: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: CoinsPick
+    clip: {fileID: 8300000, guid: ccaa177f65ca5884ea95d8b2cf0a4ec4, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TapButton
+    clip: {fileID: 8300000, guid: f4fb6d7d21dcd3b48a1c6e0876969292, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WinState
+    clip: {fileID: 8300000, guid: d77ca06cca600f546bc812f4b460a3f1, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WallSliding
+    clip: {fileID: 8300000, guid: 17c0e8673276c854d8eb6c9676424f46, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WallWinner
+    clip: {fileID: 8300000, guid: 63bd13e2a136db040a765e653adf9b1b, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BtnSound
+    clip: {fileID: 8300000, guid: 02c7a9631883ead4498bbda6759aa606, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: KeyPickUp
+    clip: {fileID: 8300000, guid: beb03ee609e05684c98e4d2ca2e12395, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  volumeSlider: {fileID: 0}

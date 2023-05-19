@@ -31,6 +31,7 @@ public class AudioManager : MonoBehaviour
         volumeSlider.value = savedVolume;
 
         FindObjectOfType<AudioManager>().PlaySound("MainTheme");
+        AudioListener.pause = muted;
     }
 
     void Awake()
