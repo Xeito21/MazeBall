@@ -17,7 +17,7 @@ public class TriggerButton : MonoBehaviour
         labelWarn.gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         if (!isOpened && itemCollector.GetKeyCount() >= requiredKeys)
         {
@@ -27,7 +27,7 @@ public class TriggerButton : MonoBehaviour
         }
         else
         {
-            FindObjectOfType<AudioManager>().PlaySound("WallSliding");
+            FindObjectOfType<AudioManager>().PlaySound("BtnSound");
             StartCoroutine(ShowWarningText());
         }
     }

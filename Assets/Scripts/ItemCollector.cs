@@ -26,7 +26,7 @@ public class ItemCollector : MonoBehaviour
             Destroy (other.gameObject);
             keys++;
             keyText.text = "Key :" + keys;
-            FindObjectOfType<AudioManager>().PlaySound("CoinsPick");
+            FindObjectOfType<AudioManager>().PlaySound("KeyPickUp");
         }
     }
 

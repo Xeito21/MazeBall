@@ -112,6 +112,8 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+
+
     public void SetVolume(float volume)
     {
         foreach (Sound s in sounds)
@@ -121,7 +123,29 @@ public class AudioManager : MonoBehaviour
         PlayerPrefs.SetFloat("volume", volume);
     }
 
-    public void ToggleMute()
+    public void PauseAllSound()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (s.source.isPlaying)
+            {
+                s.source.Pause();
+            }
+        }
+    }
+
+    public void ResumeAllSound()
+    {
+        foreach (Sound s in sounds)
+        {
+            if (!s.source.isPlaying)
+            {
+                s.source.UnPause();
+            }
+        }
+    }
+
+        public void ToggleMute()
     {
         if(muted == false)
         {

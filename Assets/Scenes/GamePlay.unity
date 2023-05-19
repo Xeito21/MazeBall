@@ -2455,7 +2455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1600ff63081e05e4a92fec58066321bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.9158583
+      value: -5.085
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1600ff63081e05e4a92fec58066321bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2573,6 +2573,16 @@ MonoBehaviour:
   - name: WallWinner
     clip: {fileID: 8300000, guid: 63bd13e2a136db040a765e653adf9b1b, type: 3}
     volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: BtnSound
+    clip: {fileID: 8300000, guid: 02c7a9631883ead4498bbda6759aa606, type: 3}
+    volume: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: KeyPickUp
+    clip: {fileID: 8300000, guid: beb03ee609e05684c98e4d2ca2e12395, type: 3}
+    volume: 0.5
     loop: 0
     source: {fileID: 0}
   volumeSlider: {fileID: 491729946}
@@ -2989,7 +2999,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55.5
+  m_fontSize: 41.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5173,7 +5183,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605728483}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.29
   m_Height: 0.08999999
@@ -6070,7 +6080,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65.65
+  m_fontSize: 45.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14230,7 +14240,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 49.55
+  m_fontSize: 37.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
