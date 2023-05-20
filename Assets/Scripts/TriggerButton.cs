@@ -17,7 +17,7 @@ public class TriggerButton : MonoBehaviour
         labelWarn.gameObject.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         if (!isOpened && itemCollector.GetKeyCount() >= requiredKeys)
         {

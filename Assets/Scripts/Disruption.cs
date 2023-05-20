@@ -21,7 +21,7 @@ public class Disruption : MonoBehaviour
         {
             transform.DOMove(startPoint.position, duration).SetEase(easeType).OnComplete(() =>
             {
-                MoveBlock(); // Panggil kembali fungsi MoveBlock untuk membuat gerakan bolak-balik terus-menerus
+                MoveBlock(); 
             });
         });
     }

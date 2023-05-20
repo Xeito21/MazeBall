@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject pausePanel;
     public AudioManager audioManager;
@@ -17,6 +17,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        FindObjectOfType<AudioManager>().PlaySound("TapButton");
         isPaused = !isPaused;
 
         if (isPaused)
@@ -35,10 +36,17 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void RestartGame()
+    {
+        FindObjectOfType<AudioManager>().PlaySound("TapButton");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
 
     public void BackMenu()
     {
+        FindObjectOfType<AudioManager>().PlaySound("TapButton");
         SceneManager.LoadScene(0);
     }
 

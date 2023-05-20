@@ -30,6 +30,29 @@ public class ItemCollector : MonoBehaviour
         }
     }
 
+
+    private void SaveCollectibleData()
+    {
+        PlayerPrefs.SetInt("Coins", coins);
+        PlayerPrefs.Save();
+    }
+
+    private void LoadCollectibleData()
+    {
+        coins = PlayerPrefs.GetInt("Coins", 0);
+        coinText.text = "" + coins;
+    }
+
+    private void OnEnable()
+    {
+        LoadCollectibleData();
+    }
+
+    private void OnDisable()
+    {
+        SaveCollectibleData();
+    }
+
     public int GetKeyCount()
     {
         return keys;

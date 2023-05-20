@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GravityController : MonoBehaviour
 {
-    [SerializeField] private float acceleration = 9.8f;
+    public float acceleration = 9.8f;
 
     private Quaternion gravityOffset = Quaternion.identity;
     private bool isActive = true;
