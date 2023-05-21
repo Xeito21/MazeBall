@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - Key
   - Trap
+  - Fall
   layers:
   - Default
   - TransparentFX

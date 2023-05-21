@@ -10,7 +10,9 @@ public class GravityController : MonoBehaviour
     private void Start()
     {
         if (SystemInfo.supportsGyroscope)
-            Input.gyro.enabled = true;
+            Input.gyro.enabled = false;
+        CalibrateGravity();
+
     }
 
     private void Update()
